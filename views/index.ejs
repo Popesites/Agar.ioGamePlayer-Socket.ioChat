@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640">
+
+  <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+  <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./javascripts/jquery.js"></script>
+  <script type="text/javascript" src="./javascripts/modernizr.js"></script>
+  <script type="text/javascript" src="./javascripts/headsmart.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#main_content').headsmart()
+    })
+  </script>
+  <title>Trigger Knight Online Game Free to Play</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font: 13px Helvetica, Arial; }
+    form {position: fixed; bottom:0; width: 20%; }
+  </style>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-2">
+      <ul>
+        <li id="chatBox">Chat Box</li>
+      </ul>
+      <ul id="messages"></ul>
+      <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+      </form>
+    </div>
+    <div class="col-xs-10">
+      <a id="forkme_banner" href="https://github.com/Popesites/Agar.ioGamePlayer-Socket.ioChat">Check out my code!</a>
+      <div class="shell">
+
+        <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Trigger Knight</h1>
+            <h2>Enjoy Trigger Knight Now With Friends!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        </header>
+
+        <section id="downloads">
+        <span class="inner">
+
+        </span></section>
+
+        <span class="banner-fix"></span>
+
+
+        <section id="main_content">
+          <h3>
+
+            <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trigger Knight</h3>
+          <div class="videoWrapper">
+            <embed width="500" height="320" base="http://external.kongregate-games.com/gamez/0013/0517/live/" src="https://external.kongregate-games.com/gamez/0013/0517/live/embeddable_130517.swf" type="application/x-shockwave-flash"></embed><br/>
+
+        </section>
+        <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>This project was made with &#10084; by <a href="https://github.com/Popesites">Popesites.</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+          <p><a href="https://github.com/Popesites">&copy; 2016 PopeSites</a></p>
+          <span class="octocat"></span>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+  $('form').submit(function(){
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+  socket.on('chat message', function(msg){
+    $('#messages').append($('<li>').text(msg));
+  });
+</script>
+</body>
+</html>
