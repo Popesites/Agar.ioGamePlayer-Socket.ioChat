@@ -5,9 +5,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Open Files" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47f7ce92-0be6-4fb9-ba79-806f66740294" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-    </list>
+    <list default="true" id="47f7ce92-0be6-4fb9-ba79-806f66740294" name="Default" comment="" />
     <ignored path="Agar.ioGamePlayer-Socket.ioChat.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -252,12 +250,12 @@
       <updated>1475102245594</updated>
       <workItem from="1475102247279" duration="12735000" />
       <workItem from="1475207217026" duration="99000" />
-      <workItem from="1475211906246" duration="755000" />
+      <workItem from="1475211906246" duration="1345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13589000" />
+    <option name="totallyTimeSpent" value="14179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1934" height="1042" extended-state="0" />
